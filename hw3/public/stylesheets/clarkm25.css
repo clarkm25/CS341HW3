@@ -1,0 +1,93 @@
+
+/*Max Clark */
+
+/* Sets cheese background image to bottom right based on url */
+body {
+  background-image: url("https://ih1.redbubble.net/image.957509452.8128/st,small,845x845-pad,1000x1000,f8f8f8.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right;
+  background-size: 200px 200px
+}
+
+body {
+  background-color: lightcyan;
+}
+
+/*Changes color of checked radio bubble */
+input[type=radio] {
+  accent-color: dodgerblue;
+}
+
+
+p.cursive {
+  font-family: "Lucida Handwriting", Lucida, cursive;
+}
+
+p.papyrus {
+  font-family: "Papyrus", Papyrus, fantasy;
+}
+
+/* Gives a blue border to specified text */
+.border {
+  border-width: 3px;
+  border-style: solid;
+  border-color: mediumslateblue;
+}
+
+/* Aligns heading to center */
+h1 {
+  text-align: center;
+}
+
+/*Allows headers to be on same line */
+.inline {
+  display: inline-block;
+}
+
+/* External Source::
+ * Title: How to - Hoverable Dropdown
+ * Author: W3Schools
+ * Availability: https://www.w3schools.com/howto/howto_css_dropdown.asp
+ */ 
+
+ /*Visual changes for the dropdown button */
+.dropdown-button {
+  background-color: rgb(205, 238, 248);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/*Makes drop down menu smaller and use scroll bar instead of displaying every month */
+.dropdown-hover {
+  position: absolute;
+  display: inline-block;
+  height: 180px;
+  overflow: auto;
+}
+
+/*Boxes for content in dropdown menu */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*Dropdown menu text */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown-hover:hover .dropdown-content {display: block;}
+
+.dropdown-hover:hover .dropdown-button {background-color: #3e8e41;}

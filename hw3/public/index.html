@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!--Max Clark-->
+<head>
+  <!-- Links css sheet to this html file-->
+  <link rel="stylesheet" type="text/css" href="stylesheets/clarkm25.css"
+  media="screen"></link>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+
+  <script type="text/javascript" src="javascripts/hide.js"></script>
+    
+  <script src="javascripts/dropdown.js"></script>
+</head>
+
+<html>
+  <body>
+    <h1 class="border">Cheesecake Order Form</h1>
+
+    <!--Adds in cheesecake image-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+    width="300" height="200"></img>
+
+    <p class="papyrus" id="quantity">Quantity Topping</p>
+
+    <!--Allows radio buttons and drop menu to be side by side-->
+    <table>
+      <tr>
+        <td><label for="quantities"></label>
+        <select name="quantities" id="quantities">
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select></td>
+        
+        <!-- Creates bubbles to allow user to pick one topping-->
+        <td><input type="radio" id="plain" name="topping"
+        value="plain"></input>
+        <label for="plain">Plain</label>
+        <br>
+        <input type="radio" id="cherry" name="topping"
+        value="cherry"></input>
+        <label for="cherry">Cherry</label>
+        <br>
+        <input type="radio" id="chocolate" name="topping"
+        value="chocolate"></input>
+        <label for="chocolate">Chocolate</label></td>
+      </tr>
+    </table>
+
+    <label for="instructions"></label>
+    <p class="cursive" id="notes">Notes:</p>
+   
+    <textarea id="instructions" name="instructions" 
+    rows="5" cols="70" placeholder="Enter any special instructions here"></textarea>
+    <br>
+
+    <button onclick="hidePage()">Order</button>
+    <br>
+
+    <h3 id="totalorders" class="inline">Orders for </h3>
+
+    <!--List for dropdown hover menu as well as hovered button-->
+    <div class="dropdown-hover">
+      <button class="dropdown-button">Jan</button>
+      <div class="dropdown-content" onclick="dropdownFunc()">
+        <a href="#Jan">Jan</a>
+        <a href="#Feb">Feb</a>
+        <a href="#Mar">Mar</a>
+        <a href="#Apr">Apr</a>
+        <a href="#May">May</a>
+        <a href="#Jun">Jun</a>
+        <a href="#Jul">Jul</a>
+        <a href="#Aug">Aug</a>
+        <a href="#Sep">Sep</a>
+        <a href="#Oct">Oct</a>
+        <a href="#Nov">Nov</a>
+        <a href="#Dec">Dec</a>
+      </div>
+    </div>
+      
+    <!--Creates unordered bullet point list-->
+    <ul>
+      <li>11 cherry</li>
+      <li>17 chocolate</li>
+      <li>31 plain</li>
+    </ul>     
+  </body>
+</html>
